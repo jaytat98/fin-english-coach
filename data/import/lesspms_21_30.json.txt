@@ -1,0 +1,482 @@
+[
+  {
+    "day": 21, "week": 5,
+    "theme_ko": "정중하게 반대 의견 내기", "theme_en": "Pushing back politely",
+    "phrase": {
+      "text": "push back",
+      "meaning_ko": "(요청·의견에) 정중히 반대하다 / (일정을) 뒤로 미루다",
+      "nuance_ko": "두 가지 뜻이 있어요. 'push back on + 요청'은 무리한 요청에 이의를 제기한다는 뜻이고, 'push back + 회의/일정'은 일정을 뒤로 미룬다는 뜻입니다. 반대할 때는 이유와 대안을 함께 말해야 프로페셔널하게 들려요.",
+      "register": "neutral",
+      "examples": [
+        {"en": "We had to push back on the client's request for a shorter timeline.", "ko": "일정을 단축해 달라는 고객의 요청에 이의를 제기해야 했습니다."},
+        {"en": "Can we push back the meeting to 3 p.m.?", "ko": "회의를 오후 3시로 미룰 수 있을까요?"}
+      ]
+    },
+    "terms": {
+      "common": {"term": "compromise", "meaning_ko": "타협 (절충안)", "definition_en": "An agreement in which each side gives up something to reach a solution.", "example_en": "We reached a compromise on the reporting deadline.", "example_ko": "보고 마감일에 대해 절충안을 찾았습니다."},
+      "Audit": [
+        {"term": "audit fee", "meaning_ko": "감사보수", "definition_en": "The fee charged by the auditor for performing the audit.", "example_en": "The client asked us to reduce the audit fee by 10%.", "example_ko": "고객이 감사보수를 10% 낮춰 달라고 요청했습니다."},
+        {"term": "scope limitation", "meaning_ko": "감사범위 제한", "definition_en": "A situation where the auditor cannot obtain sufficient appropriate audit evidence.", "example_en": "If we cannot access the warehouse, it would be a scope limitation.", "example_ko": "창고에 접근할 수 없다면 감사범위 제한에 해당합니다."}
+      ],
+      "Tax": [
+        {"term": "tax dispute", "meaning_ko": "조세분쟁", "definition_en": "A disagreement between a taxpayer and the tax authority about tax payable.", "example_en": "The tax dispute has been ongoing for two years.", "example_ko": "이 조세분쟁은 2년째 이어지고 있습니다."},
+        {"term": "advance pricing agreement (APA)", "meaning_ko": "정상가격 사전승인 (APA)", "definition_en": "An agreement with the tax authority on the transfer pricing method for future years.", "example_en": "An advance pricing agreement can reduce future transfer pricing disputes.", "example_ko": "정상가격 사전승인은 향후 이전가격 분쟁을 줄일 수 있습니다."}
+      ],
+      "Deals": [
+        {"term": "exclusivity", "meaning_ko": "배타적 협상권", "definition_en": "A period during which the seller agrees to negotiate only with one buyer.", "example_en": "The buyer asked for six weeks of exclusivity.", "example_ko": "인수자는 6주간의 배타적 협상권을 요청했습니다."},
+        {"term": "long-stop date", "meaning_ko": "최종 거래종결 기한 (롱스톱 데이트)", "definition_en": "The final date by which closing conditions must be met, after which the deal may be terminated.", "example_en": "If the conditions aren't met by the long-stop date, either party may terminate.", "example_ko": "최종 기한까지 조건이 충족되지 않으면 어느 쪽이든 계약을 해지할 수 있습니다."}
+      ],
+      "Advisory": [
+        {"term": "change request", "meaning_ko": "변경요청", "definition_en": "A formal request to change the agreed scope, timeline or cost of a project.", "example_en": "Any additional reports will require a change request.", "example_ko": "추가 보고서는 변경요청 절차가 필요합니다."},
+        {"term": "escalation path", "meaning_ko": "에스컬레이션 경로 (보고 체계)", "definition_en": "The agreed route for raising unresolved issues to more senior people.", "example_en": "The project charter defines a clear escalation path.", "example_ko": "프로젝트 헌장에 명확한 보고 체계가 정의되어 있습니다."}
+      ]
+    },
+    "konglish_tip": {
+      "category": "politeness", "pattern_key": "politeness:blunt_no",
+      "title_ko": "'No, we can't.'만 말하지 않기",
+      "wrong": "No, we can't do that.",
+      "right": "Unfortunately, that would be difficult within the current timeline. One option would be to deliver a draft first.",
+      "explanation_ko": "영어권 비즈니스에서 이유 없는 짧은 거절은 무례하게 들려요. 'Unfortunately'로 부드럽게 시작하고, 이유와 대안('One option would be...')을 함께 말하면 관계를 지키면서 거절할 수 있습니다."
+    },
+    "speaking_sentence": {"en": "I understand the pressure, but I need to push back on a two-week deadline. One option would be a phased plan.", "ko": "압박을 받고 계신 것은 이해하지만, 2주 마감은 어렵다고 말씀드려야겠습니다. 한 가지 방안은 단계별 계획입니다.", "situation_ko": "고객이 무리한 마감일을 요구할 때"},
+    "writing_task": {"instruction_ko": "'push back'을 사용해, 고객의 무리한 요청에 정중하게 반대하고 대안을 제시하는 문장을 써 보세요.", "target_phrase": "push back", "sample_answer": "I have to push back slightly on the new deadline, but we could share the key findings by Friday and the full report the following week."},
+    "mini_quiz": [
+      {"type": "mcq", "question_en": "Which response sounds the most professional?", "options": ["No.", "No, impossible.", "Unfortunately, that would be difficult, but one option would be...", "You are asking too much."], "answer_index": 2, "explanation_ko": "거절할 때는 부드러운 시작 + 이유 + 대안이 가장 프로페셔널합니다."},
+      {"type": "fill_blank", "sentence_en": "The client pushed ___ on our proposed fee.", "options": ["back", "off", "up", "out"], "answer_index": 0, "explanation_ko": "이의를 제기하다는 'push back on'입니다."}
+    ],
+    "suggested_call_id": "general_deadline_push",
+    "review_status": "draft"
+  },
+  {
+    "day": 22, "week": 5,
+    "theme_ko": "세부 사항 조율하기", "theme_en": "Ironing out the details",
+    "phrase": {
+      "text": "iron out",
+      "meaning_ko": "(문제·이견을) 해결하다, 세부 사항을 조율하다",
+      "nuance_ko": "다림질로 주름을 펴듯이 남아 있는 작은 문제나 이견을 해결할 때 씁니다. 'iron out the details / differences / issues'처럼 쓰고, 큰 틀은 합의했고 세부만 남았다는 긍정적인 느낌이 있어요.",
+      "register": "neutral",
+      "examples": [
+        {"en": "We still need to iron out a few details in the SPA.", "ko": "주식매매계약서에서 아직 몇 가지 세부 사항을 조율해야 합니다."},
+        {"en": "Let's iron out the remaining issues before the steering committee.", "ko": "운영위원회 전에 남은 이슈들을 정리합시다."}
+      ]
+    },
+    "terms": {
+      "common": {"term": "trade-off", "meaning_ko": "트레이드오프 (상충관계)", "definition_en": "A balance between two things where gaining one means losing some of the other.", "example_en": "There is a trade-off between speed and the level of detail.", "example_ko": "속도와 상세함 사이에는 상충관계가 있습니다."},
+      "Audit": [
+        {"term": "schedule of uncorrected misstatements", "meaning_ko": "미수정왜곡표시 요약표", "definition_en": "A summary of misstatements identified by the auditor that management has not corrected.", "example_en": "We will share the schedule of uncorrected misstatements with the audit committee.", "example_ko": "미수정왜곡표시 요약표를 감사위원회와 공유할 예정입니다."},
+        {"term": "management representation letter", "meaning_ko": "경영진 확인서", "definition_en": "A letter in which management confirms in writing certain matters to the auditor.", "example_en": "The CFO must sign the management representation letter before we issue the report.", "example_ko": "보고서 발행 전에 CFO가 경영진 확인서에 서명해야 합니다."}
+      ],
+      "Tax": [
+        {"term": "double taxation", "meaning_ko": "이중과세", "definition_en": "The same income being taxed in two countries.", "example_en": "The tax treaty helps prevent double taxation.", "example_ko": "조세조약은 이중과세를 방지하는 데 도움이 됩니다."},
+        {"term": "mutual agreement procedure (MAP)", "meaning_ko": "상호합의절차 (MAP)", "definition_en": "A treaty process in which two tax authorities negotiate to resolve double taxation.", "example_en": "The Korean parent may request a mutual agreement procedure.", "example_ko": "한국 모회사는 상호합의절차를 신청할 수 있습니다."}
+      ],
+      "Deals": [
+        {"term": "condition precedent (CP)", "meaning_ko": "선행조건 (CP)", "definition_en": "A condition that must be satisfied before the transaction can close.", "example_en": "Regulatory approval is a condition precedent to closing.", "example_ko": "규제 당국의 승인은 거래 종결의 선행조건입니다."},
+        {"term": "material adverse change (MAC) clause", "meaning_ko": "중대한 부정적 변경 (MAC) 조항", "definition_en": "A clause allowing the buyer to withdraw if the target's business deteriorates significantly before closing.", "example_en": "The buyer wants a broad MAC clause in the agreement.", "example_ko": "인수자는 계약서에 폭넓은 MAC 조항을 넣기를 원합니다."}
+      ],
+      "Advisory": [
+        {"term": "service level agreement (SLA)", "meaning_ko": "서비스 수준 협약 (SLA)", "definition_en": "An agreement defining the expected level and timing of a service.", "example_en": "The SLA requires invoices to be processed within three days.", "example_ko": "SLA에 따르면 인보이스는 3일 이내에 처리되어야 합니다."},
+        {"term": "fixed fee", "meaning_ko": "고정 보수", "definition_en": "A fee agreed in advance that does not change with the hours worked.", "example_en": "The project is priced on a fixed fee basis.", "example_ko": "이 프로젝트는 고정 보수 방식으로 책정되었습니다."}
+      ]
+    },
+    "konglish_tip": {
+      "category": "konglish", "pattern_key": "konglish:nego",
+      "title_ko": "'네고'는 영어가 아니에요",
+      "wrong": "Let's nego the fee with the client.",
+      "right": "Let's negotiate the fee with the client.",
+      "explanation_ko": "'네고'는 negotiation을 줄인 한국식 표현이라 영어권에서는 통하지 않아요. 동사는 negotiate, 명사는 negotiation을 씁니다. 가격을 깎는다는 뜻이라면 'ask for a discount'도 자연스러워요."
+    },
+    "speaking_sentence": {"en": "We agree on the price, but we still need to iron out the details of the earn-out.", "ko": "가격은 합의했지만 언아웃 세부 조건은 아직 조율해야 합니다.", "situation_ko": "거래 당사자와 계약 조건을 협의할 때"},
+    "writing_task": {"instruction_ko": "'iron out'을 사용해, 큰 틀은 합의했지만 세부 사항을 더 협의해야 한다고 말하는 문장을 써 보세요. 'nego' 대신 negotiate를 써 보세요.", "target_phrase": "iron out", "sample_answer": "We've agreed on the scope, so the next step is to negotiate the fee and iron out the timeline."},
+    "mini_quiz": [
+      {"type": "mcq", "question_en": "Which sentence is correct?", "options": ["We will nego the price tomorrow.", "We will negotiate the price tomorrow.", "We will negotiation the price tomorrow.", "We will do nego the price tomorrow."], "answer_index": 1, "explanation_ko": "동사는 negotiate입니다. nego는 영어가 아니에요."},
+      {"type": "fill_blank", "sentence_en": "Let's ___ out the remaining issues before signing.", "options": ["iron", "flat", "clean", "press"], "answer_index": 0, "explanation_ko": "정해진 표현은 'iron out'입니다."}
+    ],
+    "suggested_call_id": "general_deadline_push",
+    "review_status": "draft"
+  },
+  {
+    "day": 23, "week": 5,
+    "theme_ko": "결정을 상대에게 넘기기", "theme_en": "Waiting for the other side",
+    "phrase": {
+      "text": "the ball is in your court",
+      "meaning_ko": "이제 당신이 결정(행동)할 차례예요",
+      "nuance_ko": "우리 쪽 할 일은 끝났고 이제 상대방의 결정이나 행동을 기다린다는 뜻입니다. 팀 내부나 친한 사이에서는 자연스럽지만, 고객에게 직접 말하면 다소 압박하는 느낌이 날 수 있어요. 고객에게는 'We'll wait for your decision.'처럼 부드럽게 말하는 것이 안전합니다.",
+      "register": "informal",
+      "examples": [
+        {"en": "We've sent the revised proposal, so the ball is in their court now.", "ko": "수정 제안서를 보냈으니 이제 저쪽이 결정할 차례예요."},
+        {"en": "The ball is in our court. We need to reply by Friday.", "ko": "이제 우리가 답할 차례입니다. 금요일까지 회신해야 해요."}
+      ]
+    },
+    "terms": {
+      "common": {"term": "next steps", "meaning_ko": "다음 단계 (향후 조치)", "definition_en": "The actions agreed to be taken after a meeting or decision.", "example_en": "Let me summarize the next steps before we hang up.", "example_ko": "전화를 끊기 전에 다음 단계를 정리하겠습니다."},
+      "Audit": [
+        {"term": "fraud risk", "meaning_ko": "부정위험", "definition_en": "The risk of material misstatement due to intentional acts such as fraud.", "example_en": "Management override of controls is always considered a fraud risk.", "example_ko": "경영진의 통제 무시는 항상 부정위험으로 고려됩니다."},
+        {"term": "journal entry testing", "meaning_ko": "분개테스트", "definition_en": "Testing journal entries for unusual or unauthorized postings.", "example_en": "Our journal entry testing focuses on entries posted after year-end.", "example_ko": "분개테스트는 기말 이후 입력된 분개에 집중합니다."}
+      ],
+      "Tax": [
+        {"term": "amended tax return", "meaning_ko": "수정신고서", "definition_en": "A return filed to correct errors in a previously submitted tax return.", "example_en": "The client filed an amended tax return to correct the VAT error.", "example_ko": "고객사는 부가세 오류를 바로잡기 위해 수정신고서를 제출했습니다."},
+        {"term": "late payment interest", "meaning_ko": "납부지연 가산세 (지연이자)", "definition_en": "An additional charge on tax paid after the due date, usually calculated per day.", "example_en": "Late payment interest is calculated daily on the unpaid tax.", "example_ko": "납부지연 가산세는 미납 세액에 대해 일 단위로 계산됩니다."}
+      ],
+      "Deals": [
+        {"term": "binding offer", "meaning_ko": "구속력 있는 인수제안 (본입찰 제안)", "definition_en": "A final offer that the bidder is committed to, usually after due diligence.", "example_en": "Binding offers are due at the end of next month.", "example_ko": "본입찰 제안 마감은 다음 달 말입니다."},
+        {"term": "bid deadline", "meaning_ko": "입찰 마감일", "definition_en": "The date by which bidders must submit their offers.", "example_en": "The seller extended the bid deadline by one week.", "example_ko": "매도자가 입찰 마감일을 일주일 연장했습니다."}
+      ],
+      "Advisory": [
+        {"term": "decision log", "meaning_ko": "의사결정 기록부", "definition_en": "A record of key project decisions, who made them and when.", "example_en": "Please record the CFO's approval in the decision log.", "example_ko": "CFO의 승인 내용을 의사결정 기록부에 기록해 주세요."},
+        {"term": "approval workflow", "meaning_ko": "승인 워크플로 (결재 흐름)", "definition_en": "The sequence of steps and approvers a document or request must pass through.", "example_en": "The new approval workflow removes two manual steps.", "example_ko": "새 승인 워크플로에서는 수작업 단계 두 개가 사라집니다."}
+      ]
+    },
+    "konglish_tip": {
+      "category": "konglish", "pattern_key": "konglish:claim",
+      "title_ko": "'클레임을 걸다' ≠ make a claim",
+      "wrong": "The client made a claim about the delay.",
+      "right": "The client complained about the delay. / The client raised a concern about the delay.",
+      "explanation_ko": "영어의 claim은 '(권리·금액의) 청구' 또는 '주장'이라는 뜻이에요(insurance claim, refund claim). 불만을 제기한다는 뜻의 한국어 '클레임'은 complaint, complain, raise a concern으로 표현합니다."
+    },
+    "speaking_sentence": {"en": "We've answered all their questions, so the ball is in their court now.", "ko": "상대방의 질문에 모두 답했으니 이제 그쪽이 결정할 차례입니다.", "situation_ko": "매니저에게 협상 진행 상황을 보고할 때"},
+    "writing_task": {"instruction_ko": "'the ball is in ... court'를 사용해, 우리 쪽 할 일을 마쳤고 이제 상대방의 결정을 기다린다고 매니저에게 보고하는 문장을 써 보세요.", "target_phrase": "the ball is in your court", "sample_answer": "We sent the revised fee proposal this morning, so the ball is in the client's court now."},
+    "mini_quiz": [
+      {"type": "mcq", "question_ko": "고객이 서비스에 불만을 제기했다는 표현으로 알맞은 것은?", "options": ["The client made a claim.", "The client raised a concern.", "The client did claim.", "The client claimed us."], "answer_index": 1, "explanation_ko": "불만 제기는 complain 또는 raise a concern으로 표현합니다."},
+      {"type": "fill_blank", "sentence_en": "We've done our part. The ball is in their ___ now.", "options": ["court", "field", "hand", "side"], "answer_index": 0, "explanation_ko": "정해진 표현은 'the ball is in someone's court'입니다."}
+    ],
+    "suggested_call_id": "tax_tp_deadline",
+    "review_status": "draft"
+  },
+  {
+    "day": 24, "week": 5,
+    "theme_ko": "일반적인 기준 설명하기", "theme_en": "Explaining general guidelines",
+    "phrase": {
+      "text": "as a rule of thumb",
+      "meaning_ko": "일반적으로, 경험상 (대략적인 기준으로)",
+      "nuance_ko": "공식 규정은 아니지만 실무에서 통용되는 대략적인 기준을 말할 때 씁니다. 규정처럼 들리지 않게 하면서 기준을 설명할 수 있어요. 정확한 규정이 중요할 때는 이 표현만 쓰지 말고 '정확한 기준은 확인이 필요하다'고 덧붙이세요.",
+      "register": "neutral",
+      "examples": [
+        {"en": "As a rule of thumb, we ask for documents at least two weeks before fieldwork.", "ko": "일반적으로 현장감사 최소 2주 전에 자료를 요청합니다."},
+        {"en": "As a rule of thumb, keep the executive summary to one page.", "ko": "경험상 요약 보고는 한 페이지로 하는 것이 좋습니다."}
+      ]
+    },
+    "terms": {
+      "common": {"term": "best practice", "meaning_ko": "모범 사례", "definition_en": "A method widely accepted as the most effective way of doing something.", "example_en": "Monthly bank reconciliations are a best practice.", "example_ko": "매월 은행 잔액 대사를 하는 것이 모범 사례입니다."},
+      "Audit": [
+        {"term": "professional skepticism", "meaning_ko": "전문가적 의구심", "definition_en": "An attitude of questioning and critically assessing audit evidence.", "example_en": "Apply professional skepticism to management's explanations.", "example_ko": "경영진의 설명에 전문가적 의구심을 적용하세요."},
+        {"term": "professional judgment", "meaning_ko": "전문가적 판단", "definition_en": "Applying relevant training, knowledge and experience to make informed decisions.", "example_en": "Setting materiality requires professional judgment.", "example_ko": "중요성 금액 설정에는 전문가적 판단이 필요합니다."}
+      ],
+      "Tax": [
+        {"term": "personal income tax (PIT)", "meaning_ko": "개인소득세 (PIT)", "definition_en": "Tax on an individual's income such as salaries and bonuses.", "example_en": "The company withholds personal income tax from employees' salaries.", "example_ko": "회사는 직원 급여에서 개인소득세를 원천징수합니다."},
+        {"term": "tax exemption", "meaning_ko": "면세 (비과세)", "definition_en": "Income or a transaction that is not subject to a particular tax.", "example_en": "Some allowances qualify for a tax exemption.", "example_ko": "일부 수당은 비과세 대상입니다."}
+      ],
+      "Deals": [
+        {"term": "post-merger integration (PMI)", "meaning_ko": "인수 후 통합 (PMI)", "definition_en": "Combining the people, processes and systems of two businesses after a deal.", "example_en": "Post-merger integration planning should start before closing.", "example_ko": "인수 후 통합 계획은 거래 종결 전에 시작해야 합니다."},
+        {"term": "standalone costs", "meaning_ko": "독립 운영 비용", "definition_en": "Extra costs a business will incur when it operates separately from its former parent.", "example_en": "The buyer must budget for standalone costs such as new IT systems.", "example_ko": "인수자는 새 IT 시스템 같은 독립 운영 비용을 예산에 반영해야 합니다."}
+      ],
+      "Advisory": [
+        {"term": "shared service center (SSC)", "meaning_ko": "공유서비스센터 (SSC)", "definition_en": "A central unit that performs common functions such as accounting for several entities.", "example_en": "The group plans to move payables processing to a shared service center.", "example_ko": "그룹은 매입채무 처리 업무를 공유서비스센터로 이전할 계획입니다."},
+        {"term": "outsourcing", "meaning_ko": "아웃소싱 (외부 위탁)", "definition_en": "Contracting an external provider to perform a business function.", "example_en": "Payroll outsourcing reduced processing errors.", "example_ko": "급여 업무 아웃소싱으로 처리 오류가 줄었습니다."}
+      ]
+    },
+    "konglish_tip": {
+      "category": "konglish", "pattern_key": "konglish:service",
+      "title_ko": "'서비스로 해 드릴게요' ≠ It's service",
+      "wrong": "This extra analysis is service.",
+      "right": "We'll do this extra analysis free of charge. / at no additional cost.",
+      "explanation_ko": "영어의 service는 '업무·서비스 제공' 자체를 뜻해서 'It's service'라고 하면 '무료'로 이해되지 않아요. 무료는 free of charge, complimentary, at no additional cost로 표현합니다."
+    },
+    "speaking_sentence": {"en": "As a rule of thumb, we review any payment above our testing threshold, and we'll do the extra checks at no additional cost.", "ko": "일반적으로 테스트 기준 금액 이상의 지급은 모두 검토하며, 추가 확인은 별도 비용 없이 진행해 드리겠습니다.", "situation_ko": "고객에게 업무 기준을 설명할 때"},
+    "writing_task": {"instruction_ko": "'as a rule of thumb'을 사용해, 실무상 일반적인 기준을 고객이나 후배에게 설명하는 문장을 써 보세요.", "target_phrase": "as a rule of thumb", "sample_answer": "As a rule of thumb, please send us the trial balance within five working days after month-end."},
+    "mini_quiz": [
+      {"type": "mcq", "question_ko": "'추가 비용 없이 해 드릴게요'를 자연스럽게 표현한 것은?", "options": ["It's service.", "We'll do it free of charge.", "It's a free service charge.", "We give you service."], "answer_index": 1, "explanation_ko": "무료는 free of charge 또는 at no additional cost로 표현합니다."},
+      {"type": "fill_blank", "sentence_en": "As a rule of ___, keep slides to one key message each.", "options": ["thumb", "finger", "hand", "law"], "answer_index": 0, "explanation_ko": "정해진 표현은 'as a rule of thumb'입니다."}
+    ],
+    "suggested_call_id": "tax_wht_question",
+    "review_status": "draft"
+  },
+  {
+    "day": 25, "week": 5,
+    "theme_ko": "앞으로의 개선 방향 말하기", "theme_en": "Talking about the way forward",
+    "phrase": {
+      "text": "moving forward",
+      "meaning_ko": "앞으로는 (향후)",
+      "nuance_ko": "문제를 논의한 뒤 앞으로 어떻게 바꿀지 말할 때 씁니다. 과거의 잘못을 따지기보다 개선에 초점을 맞추는 긍정적인 표현이에요. 너무 자주 쓰면 상투적으로 들리니 한 번의 대화에서 한두 번 정도가 적당합니다.",
+      "register": "neutral",
+      "examples": [
+        {"en": "Moving forward, we'll send the PBC list one month in advance.", "ko": "앞으로는 PBC 목록을 한 달 전에 보내 드리겠습니다."},
+        {"en": "What changes would you suggest moving forward?", "ko": "앞으로 어떤 변화를 제안하시겠어요?"}
+      ]
+    },
+    "terms": {
+      "common": {"term": "lessons learned", "meaning_ko": "교훈 (개선 시사점)", "definition_en": "Knowledge gained from experience that should be applied in the future.", "example_en": "Let's hold a short lessons learned session after the audit.", "example_ko": "감사가 끝나면 짧게 개선 시사점을 정리하는 시간을 가집시다."},
+      "Audit": [
+        {"term": "audit committee", "meaning_ko": "감사위원회", "definition_en": "A board committee that oversees financial reporting and the audit.", "example_en": "We will present our findings to the audit committee in March.", "example_ko": "3월에 감사위원회에 발견사항을 보고할 예정입니다."},
+        {"term": "those charged with governance", "meaning_ko": "지배기구", "definition_en": "The persons responsible for overseeing the entity's strategic direction and accountability.", "example_en": "Significant deficiencies must be communicated to those charged with governance.", "example_ko": "유의적 미비점은 지배기구에 커뮤니케이션해야 합니다."}
+      ],
+      "Tax": [
+        {"term": "tax compliance", "meaning_ko": "세무 신고·납부 의무 이행 (세무 컴플라이언스)", "definition_en": "Meeting all tax filing, payment and documentation requirements.", "example_en": "We help the client manage its monthly tax compliance.", "example_ko": "저희는 고객사의 월별 세무 신고·납부 업무를 지원합니다."},
+        {"term": "tax health check", "meaning_ko": "세무 진단", "definition_en": "A review of a company's tax position to identify risks and improvement areas.", "example_en": "A tax health check identified gaps in FCT filings.", "example_ko": "세무 진단 결과 외국계약자세 신고에서 미비점이 발견되었습니다."}
+      ],
+      "Deals": [
+        {"term": "capital expenditure (capex)", "meaning_ko": "자본적 지출 (CAPEX)", "definition_en": "Spending on long-term assets such as equipment and buildings.", "example_en": "The forecast assumes a sharp increase in capex next year.", "example_ko": "전망치는 내년 자본적 지출이 크게 증가한다고 가정합니다."},
+        {"term": "cash conversion", "meaning_ko": "현금전환율", "definition_en": "How much of a company's earnings is turned into operating cash flow.", "example_en": "Cash conversion fell because receivable days increased.", "example_ko": "매출채권 회전일이 늘어나 현금전환율이 하락했습니다."}
+      ],
+      "Advisory": [
+        {"term": "continuous improvement", "meaning_ko": "지속적 개선", "definition_en": "An ongoing effort to improve processes step by step.", "example_en": "Monthly KPI reviews support continuous improvement.", "example_ko": "월별 KPI 검토는 지속적 개선을 뒷받침합니다."},
+        {"term": "post-implementation review", "meaning_ko": "구축 후 사후 검토", "definition_en": "A review after go-live to assess whether a project achieved its objectives.", "example_en": "The post-implementation review is planned three months after go-live.", "example_ko": "사후 검토는 가동 개시 3개월 후로 계획되어 있습니다."}
+      ]
+    },
+    "konglish_tip": {
+      "category": "grammar", "pattern_key": "word_choice:check_vs_review",
+      "title_ko": "꼼꼼한 검토는 check가 아니라 review",
+      "wrong": "Could you check the draft report and give us detailed comments?",
+      "right": "Could you review the draft report and give us detailed comments?",
+      "explanation_ko": "한국어로는 모두 '체크'라고 하지만, 영어의 check는 맞는지 간단히 확인하는 느낌이고 review는 내용을 꼼꼼히 검토하는 느낌입니다. 의견을 달라고 할 때는 review가 자연스러워요."
+    },
+    "speaking_sentence": {"en": "Moving forward, we'll review all cash payments above the threshold every month.", "ko": "앞으로는 기준 금액 이상의 현금 지급을 매월 검토하겠습니다.", "situation_ko": "본사와 현지 법인 회의에서 개선 방안을 제시할 때"},
+    "writing_task": {"instruction_ko": "'moving forward'를 사용해, 이번에 생긴 문제가 다시 생기지 않도록 앞으로의 개선 방안을 제안하는 문장을 써 보세요.", "target_phrase": "moving forward", "sample_answer": "Moving forward, I'd suggest that the tax team reviews all service contracts before payment."},
+    "mini_quiz": [
+      {"type": "mcq", "question_en": "Which verb is best for asking for detailed comments on a contract?", "options": ["check", "review", "see", "look"], "answer_index": 1, "explanation_ko": "꼼꼼히 검토하고 의견을 줄 때는 review가 자연스럽습니다."},
+      {"type": "fill_blank", "sentence_en": "___ forward, we will hold a monthly tax meeting.", "options": ["Moving", "Going on", "Stepping", "Looking"], "answer_index": 0, "explanation_ko": "앞으로는이라는 뜻의 정해진 표현은 'moving forward'입니다."}
+    ],
+    "suggested_call_id": "general_hq_vn_call",
+    "review_status": "draft"
+  },
+  {
+    "day": 26, "week": 6,
+    "theme_ko": "통화 중 잠시 양해 구하기", "theme_en": "Asking for a moment on a call",
+    "phrase": {
+      "text": "bear with me",
+      "meaning_ko": "잠시만 기다려 주세요 (양해를 구할 때)",
+      "nuance_ko": "통화나 회의 중 자료를 찾거나 화면을 띄우는 동안 잠시 기다려 달라고 정중하게 말할 때 씁니다. 침묵하는 것보다 훨씬 프로페셔널해요. 철자는 bare가 아니라 bear입니다.",
+      "register": "neutral",
+      "examples": [
+        {"en": "Please bear with me for a moment while I pull up the file.", "ko": "파일을 여는 동안 잠시만 기다려 주세요."},
+        {"en": "Thanks for bearing with us during the system change.", "ko": "시스템 전환 기간 동안 양해해 주셔서 감사합니다."}
+      ]
+    },
+    "terms": {
+      "common": {"term": "conference call", "meaning_ko": "전화 회의 (다자간 통화)", "definition_en": "A phone or online call with three or more participants.", "example_en": "The conference call with HQ starts at 9 a.m. Korea time.", "example_ko": "본사와의 전화 회의는 한국 시간 오전 9시에 시작합니다."},
+      "Audit": [
+        {"term": "IT general controls (ITGC)", "meaning_ko": "IT일반통제 (ITGC)", "definition_en": "Controls over IT systems such as access, change management and operations.", "example_en": "We identified a weakness in IT general controls over system changes.", "example_ko": "시스템 변경 관련 IT일반통제에서 미비점을 발견했습니다."},
+        {"term": "user access review", "meaning_ko": "사용자 접근권한 검토", "definition_en": "A periodic review of who has access to a system and whether it is appropriate.", "example_en": "The quarterly user access review was not performed.", "example_ko": "분기별 사용자 접근권한 검토가 수행되지 않았습니다."}
+      ],
+      "Tax": [
+        {"term": "special consumption tax (SCT)", "meaning_ko": "특별소비세 (SCT)", "definition_en": "A tax on certain goods and services such as alcohol, tobacco and cars.", "example_en": "Imported cars are subject to special consumption tax.", "example_ko": "수입 자동차는 특별소비세 과세 대상입니다."},
+        {"term": "import duty", "meaning_ko": "수입관세", "definition_en": "Tax charged on goods brought into a country.", "example_en": "The new supplier contract may reduce import duty costs.", "example_ko": "새 공급계약으로 수입관세 비용을 줄일 수 있습니다."}
+      ],
+      "Deals": [
+        {"term": "vendor due diligence (VDD)", "meaning_ko": "매도자 실사 (VDD)", "definition_en": "Due diligence commissioned by the seller and shared with potential buyers.", "example_en": "The seller has prepared a vendor due diligence report.", "example_ko": "매도자가 매도자 실사 보고서를 준비했습니다."},
+        {"term": "Q&A process", "meaning_ko": "질의응답 절차", "definition_en": "The formal process for buyers to submit questions to the seller during a deal.", "example_en": "Please submit your questions through the Q&A process in the data room.", "example_ko": "데이터룸의 질의응답 절차를 통해 질문을 제출해 주세요."}
+      ],
+      "Advisory": [
+        {"term": "hypercare", "meaning_ko": "하이퍼케어 (가동 직후 안정화 지원)", "definition_en": "A period of intensive support immediately after a new system goes live.", "example_en": "Our team will provide two weeks of hypercare after go-live.", "example_ko": "가동 개시 후 2주간 안정화 지원을 제공할 예정입니다."},
+        {"term": "cutover", "meaning_ko": "컷오버 (시스템 전환)", "definition_en": "The final switch from the old system or process to the new one.", "example_en": "The cutover is planned for the first weekend of July.", "example_ko": "시스템 전환은 7월 첫째 주말로 계획되어 있습니다."}
+      ]
+    },
+    "konglish_tip": {
+      "category": "konglish", "pattern_key": "konglish:handphone",
+      "title_ko": "'핸드폰'은 handphone이 아니에요",
+      "wrong": "Can I call your handphone?",
+      "right": "Can I call your mobile? / Can I call your cell phone?",
+      "explanation_ko": "handphone은 한국 등 일부 지역에서만 쓰는 표현이에요. 영국식으로는 mobile (phone), 미국식으로는 cell phone이라고 하고, 그냥 phone이라고 해도 충분합니다."
+    },
+    "speaking_sentence": {"en": "Please bear with me for a moment while I pull up the schedule.", "ko": "일정표를 여는 동안 잠시만 기다려 주세요.", "situation_ko": "통화 중 자료를 찾아야 할 때"},
+    "writing_task": {"instruction_ko": "'bear with me'를 사용해, 통화 중 숫자를 확인하는 동안 잠시 기다려 달라고 말하는 문장을 써 보세요.", "target_phrase": "bear with me", "sample_answer": "Could you bear with me for a second? I'm checking the latest figures in the trial balance."},
+    "mini_quiz": [
+      {"type": "mcq", "question_ko": "통화 중 자료를 찾느라 잠시 말이 끊길 때 가장 알맞은 표현은?", "options": ["Wait.", "Please bear with me for a moment.", "Don't hang up.", "Stop talking."], "answer_index": 1, "explanation_ko": "'Please bear with me'는 정중하게 잠시 기다려 달라는 표현입니다."},
+      {"type": "fill_blank", "sentence_en": "You can reach me on my ___ anytime today.", "options": ["mobile", "handphone", "hand phone", "handy"], "answer_index": 0, "explanation_ko": "휴대전화는 mobile 또는 cell phone이라고 합니다."}
+    ],
+    "suggested_call_id": "general_dont_know",
+    "review_status": "draft"
+  },
+  {
+    "day": 27, "week": 6,
+    "theme_ko": "통화 내용 정리하기", "theme_en": "Recapping a call",
+    "phrase": {
+      "text": "a quick recap",
+      "meaning_ko": "간단한 요약 (정리)",
+      "nuance_ko": "회의나 통화를 마무리하며 합의 사항을 짧게 정리할 때 씁니다. 'Let me give a quick recap', 'Just a quick recap of...'처럼 써요. 다자간 통화에서는 오해를 막는 가장 좋은 습관입니다.",
+      "register": "neutral",
+      "examples": [
+        {"en": "Let me give a quick recap of what we agreed today.", "ko": "오늘 합의한 내용을 간단히 정리하겠습니다."},
+        {"en": "Just a quick recap: the draft is due on Friday.", "ko": "간단히 정리하면, 초안 마감은 금요일입니다."}
+      ]
+    },
+    "terms": {
+      "common": {"term": "takeaway", "meaning_ko": "핵심 시사점 (요점)", "definition_en": "The main point or lesson someone should remember from a meeting or report.", "example_en": "The key takeaway is that cash flow is improving.", "example_ko": "핵심 시사점은 현금흐름이 개선되고 있다는 것입니다."},
+      "Audit": [
+        {"term": "interim audit", "meaning_ko": "기중감사 (중간감사)", "definition_en": "Audit work performed before the year-end, often on controls.", "example_en": "We will test controls during the interim audit in October.", "example_ko": "10월 기중감사 때 통제를 테스트할 예정입니다."},
+        {"term": "year-end audit", "meaning_ko": "기말감사", "definition_en": "Audit work performed after the year-end on balances and the financial statements.", "example_en": "The year-end audit starts in the second week of January.", "example_ko": "기말감사는 1월 둘째 주에 시작합니다."}
+      ],
+      "Tax": [
+        {"term": "master file", "meaning_ko": "통합기업보고서 (마스터파일)", "definition_en": "Transfer pricing documentation describing the group's global business and policies.", "example_en": "The master file must be prepared by the Korean parent.", "example_ko": "통합기업보고서는 한국 모회사가 작성해야 합니다."},
+        {"term": "local file", "meaning_ko": "개별기업보고서 (로컬파일)", "definition_en": "Transfer pricing documentation covering the local entity's related-party transactions.", "example_en": "The Vietnam local file covers all intercompany transactions.", "example_ko": "베트남 개별기업보고서에는 모든 그룹 내 거래가 포함됩니다."}
+      ],
+      "Deals": [
+        {"term": "share deal", "meaning_ko": "주식 인수 방식 (지분 인수)", "definition_en": "A transaction in which the buyer acquires the shares of the target company.", "example_en": "In a share deal, the buyer takes over all historical liabilities.", "example_ko": "주식 인수 방식에서는 인수자가 과거의 모든 부채를 승계합니다."},
+        {"term": "asset deal", "meaning_ko": "자산 인수 방식 (자산양수도)", "definition_en": "A transaction in which the buyer acquires selected assets and liabilities.", "example_en": "An asset deal may limit the buyer's exposure to past tax issues.", "example_ko": "자산 인수 방식은 과거 세무 이슈에 대한 인수자의 리스크를 줄일 수 있습니다."}
+      ],
+      "Advisory": [
+        {"term": "workshop", "meaning_ko": "워크숍", "definition_en": "An interactive session where participants work together on a topic.", "example_en": "We'll hold a design workshop with the finance team next week.", "example_ko": "다음 주에 재무팀과 설계 워크숍을 진행합니다."},
+        {"term": "deep dive", "meaning_ko": "심층 분석", "definition_en": "A detailed, in-depth analysis of a specific topic.", "example_en": "The CFO asked for a deep dive on procurement costs.", "example_ko": "CFO가 구매 비용에 대한 심층 분석을 요청했습니다."}
+      ]
+    },
+    "konglish_tip": {
+      "category": "grammar", "pattern_key": "grammar_other:question_word_order",
+      "title_ko": "간접의문문은 '주어 + 동사' 순서",
+      "wrong": "Could you tell me when is the deadline?",
+      "right": "Could you tell me when the deadline is?",
+      "explanation_ko": "'Could you tell me', 'Do you know' 뒤에 오는 질문은 평서문 어순(의문사 + 주어 + 동사)으로 씁니다. 직접 물을 때만 'When is the deadline?'처럼 동사가 앞에 와요."
+    },
+    "speaking_sentence": {"en": "Let me give a quick recap: Ms. Thu will switch the suppliers to bank transfer, and Mr. Park will approve the new control.", "ko": "간단히 정리하겠습니다. Thu 님은 공급업체 결제를 계좌이체로 전환하시고, Park 이사님께서 새 통제 절차를 승인해 주시기로 했습니다.", "situation_ko": "다자간 통화를 마무리하며"},
+    "writing_task": {"instruction_ko": "'a quick recap'을 사용해, 통화 끝에 누가 무엇을 언제까지 할지 정리하는 문장을 써 보세요.", "target_phrase": "a quick recap", "sample_answer": "Just a quick recap: Linh will send the bank letter by Wednesday, and I'll update the timeline by Thursday."},
+    "mini_quiz": [
+      {"type": "mcq", "question_en": "Choose the correct sentence.", "options": ["Do you know where is the file?", "Do you know where the file is?", "Do you know where does the file is?", "Do you know is where the file?"], "answer_index": 1, "explanation_ko": "간접의문문은 '의문사 + 주어 + 동사' 순서입니다."},
+      {"type": "fill_blank", "sentence_en": "Before we hang up, let me give a quick ___ of the action items.", "options": ["recap", "recall", "repeat", "return"], "answer_index": 0, "explanation_ko": "간단한 요약은 'a quick recap'입니다."}
+    ],
+    "suggested_call_id": "general_hq_vn_call",
+    "review_status": "draft"
+  },
+  {
+    "day": 28, "week": 6,
+    "theme_ko": "주제를 간단히 언급하기", "theme_en": "Touching on topics",
+    "phrase": {
+      "text": "touch on",
+      "meaning_ko": "(간단히) 언급하다, 짧게 다루다",
+      "nuance_ko": "깊이 논의하지 않고 짧게 언급할 때 씁니다. 'touch on + 주제' 형태이고, 앞에서 배운 'touch base(연락해 상황 공유)'와 헷갈리지 않도록 주의하세요. 회의 안건을 소개할 때 'I'll briefly touch on...'처럼 자주 씁니다.",
+      "register": "neutral",
+      "examples": [
+        {"en": "I'd like to briefly touch on the inventory count arrangements.", "ko": "재고실사 준비 사항을 간단히 말씀드리겠습니다."},
+        {"en": "We only touched on the tax issues in the last meeting.", "ko": "지난 회의에서는 세무 이슈를 짧게만 다뤘습니다."}
+      ]
+    },
+    "terms": {
+      "common": {"term": "kickoff meeting", "meaning_ko": "착수 회의 (킥오프 미팅)", "definition_en": "The first meeting of a project to align on goals, roles and timeline.", "example_en": "The kickoff meeting with the client is on Monday.", "example_ko": "고객과의 착수 회의는 월요일입니다."},
+      "Audit": [
+        {"term": "audit plan", "meaning_ko": "감사계획", "definition_en": "A detailed plan of the nature, timing and extent of audit procedures.", "example_en": "We'll share the audit plan with the audit committee.", "example_ko": "감사계획을 감사위원회와 공유할 예정입니다."},
+        {"term": "overall audit strategy", "meaning_ko": "전반감사전략", "definition_en": "The high-level approach that sets the scope, timing and direction of the audit.", "example_en": "The overall audit strategy reflects the new ERP system.", "example_ko": "전반감사전략에는 새 ERP 시스템이 반영되어 있습니다."}
+      ],
+      "Tax": [
+        {"term": "filing deadline", "meaning_ko": "신고기한", "definition_en": "The last date by which a tax return must be submitted.", "example_en": "The filing deadline for the annual CIT return is approaching.", "example_ko": "법인세 연간 신고기한이 다가오고 있습니다."},
+        {"term": "tax calendar", "meaning_ko": "세무 일정표", "definition_en": "A schedule of all tax filing and payment due dates for a company.", "example_en": "We've updated the tax calendar for the new fiscal year.", "example_ko": "새 회계연도 세무 일정표를 업데이트했습니다."}
+      ],
+      "Deals": [
+        {"term": "deal timetable", "meaning_ko": "거래 일정표", "definition_en": "The planned schedule of key steps in a transaction, from due diligence to closing.", "example_en": "The deal timetable targets signing in eight weeks.", "example_ko": "거래 일정표상 8주 후 계약 체결이 목표입니다."},
+        {"term": "transaction perimeter", "meaning_ko": "거래 대상 범위", "definition_en": "The entities, assets and businesses included in a transaction.", "example_en": "The Thai subsidiary is outside the transaction perimeter.", "example_ko": "태국 자회사는 거래 대상 범위에 포함되지 않습니다."}
+      ],
+      "Advisory": [
+        {"term": "project plan", "meaning_ko": "프로젝트 계획", "definition_en": "A document setting out project tasks, owners and timing.", "example_en": "The project plan shows four phases over six months.", "example_ko": "프로젝트 계획은 6개월간 4단계로 구성되어 있습니다."},
+        {"term": "critical path", "meaning_ko": "주공정 (크리티컬 패스)", "definition_en": "The sequence of tasks that determines the shortest possible project duration.", "example_en": "Data migration is on the critical path for go-live.", "example_ko": "데이터 이관은 가동 개시의 주공정에 해당합니다."}
+      ]
+    },
+    "konglish_tip": {
+      "category": "grammar", "pattern_key": "grammar_other:missing_subject",
+      "title_ko": "영어 문장에는 주어가 꼭 필요해요",
+      "wrong": "Is difficult to finish the testing by Friday.",
+      "right": "It is difficult to finish the testing by Friday.",
+      "explanation_ko": "한국어는 주어를 자주 생략하지만 영어는 거의 항상 주어가 필요합니다. 마땅한 주어가 없을 때는 형식상 주어 it을 쓰고, 'Will send it tomorrow'도 'I will send it tomorrow'처럼 주어를 넣어 말하세요."
+    },
+    "speaking_sentence": {"en": "Before we finish, I'd like to briefly touch on the inventory count arrangements.", "ko": "마치기 전에 재고실사 준비 사항을 간단히 말씀드리고 싶습니다.", "situation_ko": "착수 회의에서 마지막 안건을 소개할 때"},
+    "writing_task": {"instruction_ko": "'touch on'을 사용해, 회의에서 다룰 주제를 간단히 소개하는 문장을 써 보세요. 주어를 빠뜨리지 않도록 주의하세요.", "target_phrase": "touch on", "sample_answer": "Today I'll walk you through the timeline, and then I'll briefly touch on the document requests."},
+    "mini_quiz": [
+      {"type": "mcq", "question_en": "Choose the correct sentence.", "options": ["Is important to meet the deadline.", "It is important to meet the deadline.", "Important is to meet the deadline.", "Is it important meet the deadline."], "answer_index": 1, "explanation_ko": "형식상 주어 it이 필요합니다."},
+      {"type": "fill_blank", "sentence_en": "In the next section, I'll briefly touch ___ the tax impact.", "options": ["on", "base", "with", "at"], "answer_index": 0, "explanation_ko": "간단히 언급하다는 'touch on + 주제'입니다."}
+    ],
+    "suggested_call_id": "audit_kickoff",
+    "review_status": "draft"
+  },
+  {
+    "day": 29, "week": 6,
+    "theme_ko": "진행 중인 일 소개하기", "theme_en": "Talking about upcoming work",
+    "phrase": {
+      "text": "in the pipeline",
+      "meaning_ko": "준비 중인, 진행 중인 (곧 나올)",
+      "nuance_ko": "계획되어 있거나 준비 중이라 곧 진행·완료될 일을 말할 때 씁니다. 프로젝트, 거래, 수주 기회 등에 자주 쓰고, 'We have several deals in the pipeline'처럼 업무량이나 향후 계획을 설명할 때 유용해요.",
+      "register": "neutral",
+      "examples": [
+        {"en": "We have two new acquisitions in the pipeline.", "ko": "새로운 인수 건 두 개가 진행 중입니다."},
+        {"en": "A new e-invoicing guideline is in the pipeline.", "ko": "새로운 전자세금계산서 지침이 준비 중입니다."}
+      ]
+    },
+    "terms": {
+      "common": {"term": "headcount", "meaning_ko": "인원 (인력 규모)", "definition_en": "The number of people employed or assigned to a team.", "example_en": "The finance team's headcount increased to twelve.", "example_ko": "재무팀 인원이 12명으로 늘었습니다."},
+      "Audit": [
+        {"term": "revenue recognition", "meaning_ko": "수익인식", "definition_en": "The accounting rules for when and how much revenue is recorded.", "example_en": "Revenue recognition for long-term contracts needs careful review.", "example_ko": "장기 계약의 수익인식은 신중한 검토가 필요합니다."},
+        {"term": "performance obligation", "meaning_ko": "수행의무", "definition_en": "A promise in a contract to transfer a distinct good or service to a customer.", "example_en": "The contract contains two performance obligations: equipment and maintenance.", "example_ko": "이 계약에는 장비와 유지보수라는 두 가지 수행의무가 있습니다."}
+      ],
+      "Tax": [
+        {"term": "tax holiday", "meaning_ko": "택스 홀리데이 (법인세 면제 기간)", "definition_en": "A period during which a company pays no or reduced corporate income tax.", "example_en": "The new project qualifies for a four-year tax holiday.", "example_ko": "신규 프로젝트는 4년간의 법인세 면제 혜택 대상입니다."},
+        {"term": "preferential tax rate", "meaning_ko": "우대세율", "definition_en": "A lower tax rate granted to certain activities or locations.", "example_en": "High-tech projects may apply a preferential tax rate.", "example_ko": "첨단기술 프로젝트는 우대세율을 적용받을 수 있습니다."}
+      ],
+      "Deals": [
+        {"term": "teaser", "meaning_ko": "티저 (투자 요약서)", "definition_en": "A short anonymous summary of a business sent to potential buyers to test interest.", "example_en": "The advisor sent the teaser to twenty potential investors.", "example_ko": "자문사가 잠재 투자자 20곳에 티저를 보냈습니다."},
+        {"term": "shortlist", "meaning_ko": "숏리스트 (우선 후보군)", "definition_en": "A reduced list of the most suitable bidders or candidates.", "example_en": "Three bidders made the shortlist for the second round.", "example_ko": "세 곳의 입찰자가 2차 라운드 숏리스트에 올랐습니다."}
+      ],
+      "Advisory": [
+        {"term": "business development (BD)", "meaning_ko": "사업 개발 (수주 활동)", "definition_en": "Activities to win new clients and projects.", "example_en": "The partner spends a lot of time on business development.", "example_ko": "파트너는 수주 활동에 많은 시간을 씁니다."},
+        {"term": "proposal", "meaning_ko": "제안서", "definition_en": "A document describing the approach, team and fee offered for a project.", "example_en": "We need to submit the proposal by next Monday.", "example_ko": "다음 주 월요일까지 제안서를 제출해야 합니다."}
+      ]
+    },
+    "konglish_tip": {
+      "category": "konglish", "pattern_key": "konglish:fighting",
+      "title_ko": "'화이팅!'은 영어로 Good luck!",
+      "wrong": "Fighting for tomorrow's client meeting!",
+      "right": "Good luck with tomorrow's client meeting! / You've got this!",
+      "explanation_ko": "영어의 fighting은 '싸우는 중'이라는 뜻이라 응원으로 들리지 않아요. 응원할 때는 Good luck!, You've got this!, Go for it!처럼 말합니다."
+    },
+    "speaking_sentence": {"en": "We have two new acquisitions in the pipeline, so the deals team will be busy next quarter.", "ko": "새 인수 건 두 개가 진행 중이라 딜팀은 다음 분기에 바쁠 예정입니다.", "situation_ko": "팀 회의에서 향후 업무량을 설명할 때"},
+    "writing_task": {"instruction_ko": "'in the pipeline'을 사용해, 팀에 준비 중인 프로젝트나 업무를 소개하는 문장을 써 보세요.", "target_phrase": "in the pipeline", "sample_answer": "We have a new tax health check project in the pipeline, so we may need one more senior in May."},
+    "mini_quiz": [
+      {"type": "mcq", "question_ko": "중요한 발표를 앞둔 동료에게 할 수 있는 자연스러운 응원은?", "options": ["Fighting!", "Good luck! You've got this!", "Fight hard!", "Be fighting!"], "answer_index": 1, "explanation_ko": "영어로 응원할 때는 Good luck! 또는 You've got this!를 씁니다."},
+      {"type": "fill_blank", "sentence_en": "Several new projects are in the ___ for next year.", "options": ["pipeline", "pipe", "line", "tube"], "answer_index": 0, "explanation_ko": "정해진 표현은 'in the pipeline'입니다."}
+    ],
+    "suggested_call_id": "deals_dd_interview",
+    "review_status": "draft"
+  },
+  {
+    "day": 30, "week": 6,
+    "theme_ko": "최종 승인 받기", "theme_en": "Getting sign-off",
+    "phrase": {
+      "text": "sign off",
+      "meaning_ko": "(최종) 승인하다",
+      "nuance_ko": "문서나 결과물을 최종 승인할 때 'sign off on + 문서' 형태로 씁니다. 명사는 하이픈을 넣어 'sign-off'라고 해요. 실제 서명이 없어도 '공식적으로 승인한다'는 의미로 널리 쓰입니다.",
+      "register": "neutral",
+      "examples": [
+        {"en": "The partner signed off on the final report yesterday.", "ko": "파트너가 어제 최종 보고서를 승인했습니다."},
+        {"en": "We need the CFO's sign-off before we can issue the report.", "ko": "보고서를 발행하려면 CFO의 승인이 필요합니다."}
+      ]
+    },
+    "terms": {
+      "common": {"term": "approval", "meaning_ko": "승인", "definition_en": "Official agreement or permission for something to go ahead.", "example_en": "The budget is still waiting for board approval.", "example_ko": "예산은 아직 이사회 승인을 기다리고 있습니다."},
+      "Audit": [
+        {"term": "auditor's report", "meaning_ko": "감사보고서", "definition_en": "The report in which the auditor expresses an opinion on the financial statements.", "example_en": "We plan to issue the auditor's report on March 20.", "example_ko": "3월 20일에 감사보고서를 발행할 계획입니다."},
+        {"term": "emphasis of matter", "meaning_ko": "강조사항", "definition_en": "A paragraph in the auditor's report drawing attention to a matter disclosed in the financial statements.", "example_en": "The report includes an emphasis of matter on the pending lawsuit.", "example_ko": "감사보고서에 진행 중인 소송에 대한 강조사항이 포함되어 있습니다."}
+      ],
+      "Tax": [
+        {"term": "tax clearance", "meaning_ko": "세금 완납 확인 (세무 정산 확인)", "definition_en": "Confirmation from the tax authority that a taxpayer has no outstanding tax.", "example_en": "The branch needs tax clearance before it can close.", "example_ko": "지점을 폐쇄하려면 세금 완납 확인이 필요합니다."},
+        {"term": "power of attorney", "meaning_ko": "위임장", "definition_en": "A legal document authorizing someone to act on another's behalf.", "example_en": "Please sign the power of attorney so we can file on your behalf.", "example_ko": "저희가 대리 신고할 수 있도록 위임장에 서명해 주세요."}
+      ],
+      "Deals": [
+        {"term": "completion accounts", "meaning_ko": "클로징 기준 재무제표 (완료회계)", "definition_en": "Accounts prepared at closing to calculate the final purchase price.", "example_en": "The final price will be based on the completion accounts.", "example_ko": "최종 가격은 클로징 기준 재무제표에 따라 결정됩니다."},
+        {"term": "consideration", "meaning_ko": "인수대가 (거래대가)", "definition_en": "The total value paid by the buyer, in cash, shares or other forms.", "example_en": "Part of the consideration will be paid in shares.", "example_ko": "인수대가의 일부는 주식으로 지급됩니다."}
+      ],
+      "Advisory": [
+        {"term": "handover", "meaning_ko": "인수인계", "definition_en": "Transferring responsibility and knowledge to another person or team.", "example_en": "We'll complete the handover to the client's IT team in June.", "example_ko": "6월에 고객사 IT팀에 인수인계를 마칠 예정입니다."},
+        {"term": "final report", "meaning_ko": "최종 보고서", "definition_en": "The completed report delivered at the end of a project.", "example_en": "The final report includes a three-year roadmap.", "example_ko": "최종 보고서에는 3개년 로드맵이 포함되어 있습니다."}
+      ]
+    },
+    "konglish_tip": {
+      "category": "konglish", "pattern_key": "konglish:sign",
+      "title_ko": "'사인해 주세요' ≠ put your sign",
+      "wrong": "Please put your sign on the last page.",
+      "right": "Please sign the last page. / Please put your signature on the last page.",
+      "explanation_ko": "영어에서 sign은 동사(서명하다)이고, 명사 '서명'은 signature입니다. 명사 sign은 표지판이나 신호라는 뜻이에요. 연예인 사인은 autograph라고 합니다."
+    },
+    "speaking_sentence": {"en": "Hi Linh, this is Minh from the audit team. Could you please sign the representation letter by Wednesday?", "ko": "Linh 님, 감사팀 Minh입니다. 수요일까지 경영진 확인서에 서명해 주실 수 있을까요?", "situation_ko": "고객에게 음성 메시지를 남길 때"},
+    "writing_task": {"instruction_ko": "'sign off on'을 사용해, 보고서 발행 전에 매니저나 고객의 최종 승인이 필요하다고 말하는 문장을 써 보세요.", "target_phrase": "sign off", "sample_answer": "Once the CFO signs off on the adjustments, we can issue the final report on Friday."},
+    "mini_quiz": [
+      {"type": "mcq", "question_en": "Which sentence is correct?", "options": ["Please put your sign here.", "Please sign here.", "Please do a sign here.", "Please make sign here."], "answer_index": 1, "explanation_ko": "동사 sign을 쓰거나 명사 signature를 씁니다."},
+      {"type": "fill_blank", "sentence_en": "The partner needs to sign ___ on the report before we send it.", "options": ["off", "up", "out", "in"], "answer_index": 0, "explanation_ko": "최종 승인하다는 'sign off on'입니다."}
+    ],
+    "suggested_call_id": "general_voicemail",
+    "review_status": "draft"
+  }
+]

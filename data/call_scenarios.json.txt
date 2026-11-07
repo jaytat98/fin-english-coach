@@ -1,0 +1,565 @@
+[
+  {
+    "id": "general_status_update",
+    "title_ko": "매니저에게 주간 진행 상황 보고하기",
+    "title_en": "Weekly status update to your manager",
+    "service_line": "General",
+    "difficulty_default": "easy",
+    "call_type": "phone",
+    "target_minutes": 3,
+    "briefing_ko": "당신은 감사팀 Senior입니다. 매주 금요일 오후, 매니저 Daniel에게 전화로 진행 상황을 보고합니다. 이번 주에는 매출 테스트를 끝냈지만, 고객의 은행조회서 회신이 늦어 현금 항목 테스트가 지연되고 있습니다.",
+    "user_role_ko": "감사팀 Senior Associate",
+    "personas": [
+      {
+        "name": "Daniel",
+        "title": "Audit Manager",
+        "company_fictional": "Your firm (internal)",
+        "voice": "onyx",
+        "personality_en": "Supportive but results-focused manager who wants clear facts, risks and next steps.",
+        "speaking_style_en": "Friendly, direct, asks short follow-up questions about dates and risks.",
+        "hidden_facts": [
+          "The partner review is scheduled for next Thursday.",
+          "Daniel can call the client's CFO if the bank confirmation is still missing by Tuesday.",
+          "Daniel wants a one-page summary by Monday noon."
+        ],
+        "opening_line": "Hi, thanks for calling. So, how are things going on the ABC audit this week?"
+      }
+    ],
+    "goals": [
+      {"id": "g1", "text_ko": "이번 주에 완료한 업무 보고하기", "text_en": "Report what was completed this week", "success_criteria_en": "User clearly states at least one completed task (e.g. revenue testing)."},
+      {"id": "g2", "text_ko": "지연 사항과 이유 설명하기", "text_en": "Explain the delay and its reason", "success_criteria_en": "User mentions the bank confirmation delay and why it matters."},
+      {"id": "g3", "text_ko": "해결 방안 또는 도움 요청 제시하기", "text_en": "Propose a solution or ask for support", "success_criteria_en": "User proposes an action or asks Daniel for help, e.g. escalating to the CFO."},
+      {"id": "g4", "text_ko": "다음 단계와 일정 확인하기", "text_en": "Confirm next steps and timing", "success_criteria_en": "User confirms at least one next step with a date, e.g. summary by Monday."}
+    ],
+    "curveballs": [
+      "Daniel asks: 'Is this going to affect the partner review next Thursday?'",
+      "Daniel asks for the exact percentage of PBC items received so far."
+    ],
+    "key_phrases": [
+      {"en": "We're on track with...", "ko": "...는 일정대로 진행 중입니다"},
+      {"en": "We're slightly behind schedule on...", "ko": "...가 일정보다 조금 늦어지고 있습니다"},
+      {"en": "The main reason is that...", "ko": "주된 이유는 ...입니다"},
+      {"en": "Would it be possible for you to...?", "ko": "...해 주실 수 있을까요?"},
+      {"en": "I'll keep you posted.", "ko": "계속 진행 상황을 알려 드리겠습니다"}
+    ],
+    "max_turns": 10,
+    "closing_condition_en": "The user has reported progress, the delay, a solution and agreed next steps, or says goodbye."
+  },
+  {
+    "id": "general_reschedule",
+    "title_ko": "고객 미팅 일정 변경하기",
+    "title_en": "Rescheduling a client meeting",
+    "service_line": "General",
+    "difficulty_default": "easy",
+    "call_type": "phone",
+    "target_minutes": 3,
+    "briefing_ko": "다음 주 화요일 오전 10시에 고객사 재무이사 Kevin과 중간 보고 미팅이 잡혀 있습니다. 그런데 파트너의 일정이 바뀌어 미팅을 옮겨야 합니다. 정중하게 사과하고 새로운 시간을 정하세요.",
+    "user_role_ko": "프로젝트 담당 Senior",
+    "personas": [
+      {
+        "name": "Kevin",
+        "title": "Finance Director",
+        "company_fictional": "Sunrise Logistics Co.",
+        "voice": "echo",
+        "personality_en": "Polite, busy executive with a tight calendar; slightly disappointed but cooperative.",
+        "speaking_style_en": "Calm, uses short sentences, checks his calendar out loud.",
+        "hidden_facts": [
+          "Kevin is free on Wednesday afternoon after 2 p.m. and Thursday morning before 11 a.m.",
+          "Kevin travels to Hanoi on Friday.",
+          "Kevin would like the meeting agenda sent in advance."
+        ],
+        "opening_line": "Hello, Kevin speaking."
+      }
+    ],
+    "goals": [
+      {"id": "g1", "text_ko": "자기소개와 통화 목적 밝히기", "text_en": "Introduce yourself and the purpose of the call", "success_criteria_en": "User says who they are and that they need to reschedule the Tuesday meeting."},
+      {"id": "g2", "text_ko": "정중하게 사과하고 이유 설명하기", "text_en": "Apologize politely and give a reason", "success_criteria_en": "User apologizes and gives a brief, professional reason."},
+      {"id": "g3", "text_ko": "새 일정 확정하기", "text_en": "Agree on a new date and time", "success_criteria_en": "A specific new day and time is agreed by both."},
+      {"id": "g4", "text_ko": "후속 조치 약속하기 (초대장·안건)", "text_en": "Promise follow-up (invite and agenda)", "success_criteria_en": "User offers to send an updated invitation and/or the agenda."}
+    ],
+    "curveballs": [
+      "Kevin asks: 'Can't we just keep Tuesday and do it without your partner?'",
+      "Kevin first suggests Friday, which the user should notice conflicts with his trip."
+    ],
+    "key_phrases": [
+      {"en": "I'm calling about our meeting on Tuesday.", "ko": "화요일 미팅 건으로 연락드렸습니다"},
+      {"en": "I'm sorry for the inconvenience.", "ko": "불편을 드려 죄송합니다"},
+      {"en": "Would Wednesday afternoon work for you?", "ko": "수요일 오후는 괜찮으실까요?"},
+      {"en": "I'll send you an updated invitation.", "ko": "변경된 초대장을 보내 드리겠습니다"}
+    ],
+    "max_turns": 10,
+    "closing_condition_en": "A new time is agreed and follow-up is promised, or the user says goodbye."
+  },
+  {
+    "id": "audit_pbc_followup",
+    "title_ko": "누락된 감사 자료 요청하기 (PBC)",
+    "title_en": "Following up missing PBC documents",
+    "service_line": "Audit",
+    "difficulty_default": "medium",
+    "call_type": "phone",
+    "target_minutes": 4,
+    "briefing_ko": "당신은 감사팀 Senior입니다. 고객사의 은행조회서와 재고 수불부(inventory movement report)가 아직 도착하지 않았습니다. 현장감사는 이번 주 금요일에 끝나야 합니다. 고객사 Chief Accountant인 Linh에게 전화해 지연 이유를 확인하고 제출 날짜를 받아 내세요.",
+    "user_role_ko": "감사팀 Senior Associate",
+    "personas": [
+      {
+        "name": "Linh",
+        "title": "Chief Accountant",
+        "company_fictional": "ABC Manufacturing Co.",
+        "voice": "shimmer",
+        "personality_en": "Friendly but overloaded with year-end closing; slightly defensive about delays.",
+        "speaking_style_en": "Polite, sometimes explains at length, mentions how busy her team is.",
+        "hidden_facts": [
+          "The bank changed its confirmation process and now requires a signed request letter from the CFO.",
+          "The CFO is on a business trip until Wednesday.",
+          "The inventory movement report can be sent by Wednesday if the auditor shares a clear template.",
+          "Linh will commit to Thursday morning only if asked politely and offered help."
+        ],
+        "opening_line": "Hi, this is Linh from Finance. You wanted to talk about the outstanding documents?"
+      }
+    ],
+    "goals": [
+      {"id": "g1", "text_ko": "지연 이유 확인하기", "text_en": "Find out why the documents are delayed", "success_criteria_en": "User asks and learns about the bank's new process or the CFO's trip."},
+      {"id": "g2", "text_ko": "구체적인 제출 날짜 받기", "text_en": "Get a specific submission date", "success_criteria_en": "A specific day is agreed for at least one document."},
+      {"id": "g3", "text_ko": "도움 제안하기", "text_en": "Offer support", "success_criteria_en": "User offers help, e.g. a template or a draft request letter."},
+      {"id": "g4", "text_ko": "통화 끝에 다음 단계 요약하기", "text_en": "Recap next steps before ending", "success_criteria_en": "User summarizes who does what by when."}
+    ],
+    "curveballs": [
+      "Linh asks: 'Can't your team contact the bank directly instead?'",
+      "Linh says: 'Honestly, we are too busy this week. Can we do it next week?'"
+    ],
+    "key_phrases": [
+      {"en": "I'm calling to follow up on...", "ko": "...와 관련해 확인차 연락드렸습니다"},
+      {"en": "Would it be possible to have it by...?", "ko": "...까지 받아볼 수 있을까요?"},
+      {"en": "Is there anything we can do to help?", "ko": "저희가 도와드릴 부분이 있을까요?"},
+      {"en": "Just to recap, ...", "ko": "정리하자면, ..."},
+      {"en": "I understand you're very busy with year-end.", "ko": "결산으로 많이 바쁘신 것 이해합니다"}
+    ],
+    "max_turns": 12,
+    "closing_condition_en": "Submission dates are agreed and the user recaps next steps, or the user says goodbye."
+  },
+  {
+    "id": "audit_adjustment_cfo",
+    "title_ko": "까다로운 CFO에게 감사 수정사항 설명하기",
+    "title_en": "Explaining an audit adjustment to a skeptical CFO",
+    "service_line": "Audit",
+    "difficulty_default": "hard",
+    "call_type": "video",
+    "target_minutes": 5,
+    "briefing_ko": "감사 과정에서 장기 체화 재고(slow-moving inventory)에 대한 평가충당금이 부족한 것을 발견했습니다. 제안한 수정사항은 약 42억 동(VND 4.2 billion)입니다. CFO David는 이익 목표 때문에 수정에 반대하고 있습니다. 근거를 차분히 설명하고 수용을 이끌어 내세요.",
+    "user_role_ko": "감사팀 Senior (매니저를 대신해 설명)",
+    "personas": [
+      {
+        "name": "David",
+        "title": "Chief Financial Officer",
+        "company_fictional": "Lotus Retail Co.",
+        "voice": "onyx",
+        "personality_en": "Experienced, skeptical CFO under pressure to meet a profit target; challenges assumptions but respects clear evidence.",
+        "speaking_style_en": "Firm, asks 'why' repeatedly, sometimes interrupts with objections.",
+        "hidden_facts": [
+          "The proposed adjustment is VND 4.2 billion for inventory older than 12 months with no sales.",
+          "David believes a promotion next quarter will sell most of the old stock.",
+          "There is no approved promotion plan or budget yet.",
+          "David will accept the adjustment if shown the aging analysis and the lack of subsequent sales, or if offered to reassess after reviewing a documented sales plan."
+        ],
+        "opening_line": "I've seen your email about the inventory adjustment. Frankly, I don't agree with it. Walk me through your reasoning."
+      }
+    ],
+    "goals": [
+      {"id": "g1", "text_ko": "수정사항의 근거 명확히 설명하기", "text_en": "Explain the basis of the adjustment clearly", "success_criteria_en": "User mentions aging, lack of sales or net realizable value as the basis."},
+      {"id": "g2", "text_ko": "CFO의 우려를 인정하고 공감 표현하기", "text_en": "Acknowledge the CFO's concerns", "success_criteria_en": "User acknowledges the profit pressure or promotion argument respectfully."},
+      {"id": "g3", "text_ko": "증빙 요청 또는 대안 제시하기", "text_en": "Request evidence or propose an alternative", "success_criteria_en": "User asks for a documented sales plan or other evidence."},
+      {"id": "g4", "text_ko": "다음 단계 합의하기", "text_en": "Agree on next steps", "success_criteria_en": "Both agree on what will be shared and when, or escalation to the partner."}
+    ],
+    "curveballs": [
+      "David says: 'Other auditors never raised this. Why are you different?'",
+      "David asks: 'Can we just book it next year instead?'",
+      "David says: 'I'll need to discuss this with your partner directly.'"
+    ],
+    "key_phrases": [
+      {"en": "Let me walk you through our analysis.", "ko": "저희 분석 내용을 차근차근 설명드리겠습니다"},
+      {"en": "I understand your concern, however...", "ko": "우려하시는 점 이해합니다. 다만..."},
+      {"en": "Based on the aging analysis, ...", "ko": "연령 분석 결과에 따르면..."},
+      {"en": "Would you be able to share any evidence of...?", "ko": "...에 대한 증빙을 공유해 주실 수 있을까요?"},
+      {"en": "We'd be happy to reconsider if...", "ko": "...한다면 다시 검토해 보겠습니다"}
+    ],
+    "max_turns": 12,
+    "closing_condition_en": "Next steps are agreed (evidence to be shared or partner discussion scheduled), or the user says goodbye."
+  },
+  {
+    "id": "audit_kickoff",
+    "title_ko": "감사 착수 미팅 진행하기",
+    "title_en": "Audit kickoff call",
+    "service_line": "Audit",
+    "difficulty_default": "medium",
+    "call_type": "video",
+    "target_minutes": 4,
+    "briefing_ko": "새로운 감사 고객의 재무팀장 Mai와 착수 미팅(kickoff)을 화상으로 진행합니다. 감사팀 소개, 주요 일정(현장감사 시작일, 재고실사일), 자료 요청 방식을 설명하고 고객의 질문에 답하세요.",
+    "user_role_ko": "감사팀 Senior (미팅 진행자)",
+    "personas": [
+      {
+        "name": "Mai",
+        "title": "Finance Manager",
+        "company_fictional": "Green Valley Foods Co.",
+        "voice": "alloy",
+        "personality_en": "Organized, first-time audit client, curious and slightly nervous about the workload.",
+        "speaking_style_en": "Clear and polite, asks practical questions about timing and who to contact.",
+        "hidden_facts": [
+          "The company's fiscal year ends on December 31.",
+          "The warehouse is closed for maintenance on December 30.",
+          "Mai prefers to receive all document requests in one consolidated list.",
+          "Mai's team has only three accountants."
+        ],
+        "opening_line": "Good morning! Thanks for setting this up. I'm Mai, I look after finance here. Where would you like to start?"
+      }
+    ],
+    "goals": [
+      {"id": "g1", "text_ko": "팀과 미팅 목적 소개하기", "text_en": "Introduce the team and meeting purpose", "success_criteria_en": "User introduces themselves or the team and the purpose of the kickoff."},
+      {"id": "g2", "text_ko": "주요 일정 설명하기", "text_en": "Explain the key timeline", "success_criteria_en": "User mentions at least two dates or phases, e.g. fieldwork and inventory count."},
+      {"id": "g3", "text_ko": "자료 요청 방식 합의하기", "text_en": "Agree on how documents will be requested", "success_criteria_en": "User explains the PBC list or agrees on a consolidated request list and contact person."},
+      {"id": "g4", "text_ko": "고객의 질문에 답하고 우려 해소하기", "text_en": "Answer the client's questions and address concerns", "success_criteria_en": "User responds to Mai's workload concern helpfully."}
+    ],
+    "curveballs": [
+      "Mai says the warehouse is closed on the planned inventory count date.",
+      "Mai asks: 'How much of my team's time will this audit take each week?'"
+    ],
+    "key_phrases": [
+      {"en": "Let me briefly introduce our team.", "ko": "저희 팀을 간단히 소개드리겠습니다"},
+      {"en": "The key dates are as follows.", "ko": "주요 일정은 다음과 같습니다"},
+      {"en": "We'll send you a consolidated PBC list.", "ko": "PBC 목록을 한 번에 정리해 보내 드리겠습니다"},
+      {"en": "Who would be the best contact person for...?", "ko": "...와 관련해서는 어느 분께 연락드리면 될까요?"},
+      {"en": "Does that timeline work for you?", "ko": "이 일정이 괜찮으실까요?"}
+    ],
+    "max_turns": 12,
+    "closing_condition_en": "Timeline and request process are agreed and questions answered, or the user says goodbye."
+  },
+  {
+    "id": "tax_wht_question",
+    "title_ko": "고객의 외국계약자세 질문에 답하기",
+    "title_en": "Client asks about withholding / foreign contractor tax",
+    "service_line": "Tax",
+    "difficulty_default": "medium",
+    "call_type": "phone",
+    "target_minutes": 4,
+    "briefing_ko": "고객사 Chief Accountant인 Tom이 갑자기 전화했습니다. 한국 모회사에 IT 지원 서비스 비용을 지급하려는데, 세금을 원천징수해야 하는지 묻습니다. 정확한 세무 자문은 계약서 검토가 필요합니다. 개념은 큰 틀에서 설명하되, 확정적인 답을 주지 말고 검토 후 서면으로 회신하겠다고 약속하세요.",
+    "user_role_ko": "세무팀 Senior Associate",
+    "personas": [
+      {
+        "name": "Tom",
+        "title": "Chief Accountant",
+        "company_fictional": "Bluewave Electronics Vietnam Co.",
+        "voice": "echo",
+        "personality_en": "Practical, wants a quick yes/no answer because payment is due soon.",
+        "speaking_style_en": "Speaks fast, pushes for a simple answer, asks 'So do I need to withhold or not?'",
+        "hidden_facts": [
+          "The service is remote IT support from the Korean parent, about USD 200,000 per year.",
+          "Payment is due at the end of this month.",
+          "Tom has not shared the contract with anyone yet.",
+          "Tom will send the contract today if the user explains why it is needed."
+        ],
+        "opening_line": "Hi, sorry to call out of the blue. Quick question: we're paying our Korean parent for IT support. Do we need to withhold any tax?"
+      }
+    ],
+    "goals": [
+      {"id": "g1", "text_ko": "핵심 사실 질문하기 (서비스 내용·금액·지급 시기)", "text_en": "Ask clarifying questions about the facts", "success_criteria_en": "User asks about the service, amount or payment timing."},
+      {"id": "g2", "text_ko": "개념을 큰 틀에서 설명하기", "text_en": "Explain the concept at a high level", "success_criteria_en": "User explains that payments to foreign entities may be subject to foreign contractor tax, without stating a final conclusion."},
+      {"id": "g3", "text_ko": "확정 답변 없이 검토 필요성 설명하기", "text_en": "Explain why a review is needed before a final answer", "success_criteria_en": "User says the contract and tax treaty need to be reviewed."},
+      {"id": "g4", "text_ko": "자료 요청과 회신 일정 약속하기", "text_en": "Request the contract and promise a follow-up date", "success_criteria_en": "User asks for the contract and commits to a reply date."}
+    ],
+    "curveballs": [
+      "Tom insists: 'Just give me a rough yes or no, I won't hold you to it.'",
+      "Tom asks: 'Does the Korea–Vietnam tax treaty mean we don't pay anything?'"
+    ],
+    "key_phrases": [
+      {"en": "Could you tell me a bit more about the service?", "ko": "서비스 내용을 조금 더 말씀해 주시겠어요?"},
+      {"en": "At a high level, ...", "ko": "큰 틀에서 말씀드리면..."},
+      {"en": "It depends on the terms of the contract.", "ko": "계약 조건에 따라 달라집니다"},
+      {"en": "I'd prefer not to give you a final answer until...", "ko": "...전까지는 확정 답변을 드리기 어렵습니다"},
+      {"en": "I'll get back to you in writing by...", "ko": "...까지 서면으로 회신드리겠습니다"}
+    ],
+    "max_turns": 12,
+    "closing_condition_en": "The user has requested the contract and promised a written reply date, or says goodbye."
+  },
+  {
+    "id": "tax_tp_deadline",
+    "title_ko": "이전가격 보고서 마감일 안내하기",
+    "title_en": "Reminding the client of the transfer pricing deadline",
+    "service_line": "Tax",
+    "difficulty_default": "medium",
+    "call_type": "phone",
+    "target_minutes": 4,
+    "briefing_ko": "고객사의 이전가격 문서(local file)는 법인세 확정신고 기한인 3월 말까지 준비되어야 합니다. 그런데 한국 본사에서 받아야 할 그룹 자료가 아직 오지 않았습니다. 재무팀장 Ngoc에게 전화해 위험을 설명하고, 자료 제출 일정을 합의하세요. 겁을 주지 말고 정중하게 긴급성을 전달하는 것이 핵심입니다.",
+    "user_role_ko": "세무팀 Senior",
+    "personas": [
+      {
+        "name": "Ngoc",
+        "title": "Finance Manager",
+        "company_fictional": "Pacific Textiles Co.",
+        "voice": "shimmer",
+        "personality_en": "Busy with year-end closing; thinks transfer pricing documentation is not urgent.",
+        "speaking_style_en": "Polite but distracted, tries to postpone, asks what happens if it is late.",
+        "hidden_facts": [
+          "The group data from Korean HQ is with Mr. Lee in the HQ tax team, who has been on leave.",
+          "Ngoc can email HQ today if the user explains exactly which data is needed.",
+          "Ngoc thought the deadline was in June."
+        ],
+        "opening_line": "Hi, yes, I got your message. Is this about the transfer pricing report? We're really busy with closing right now."
+      }
+    ],
+    "goals": [
+      {"id": "g1", "text_ko": "정확한 마감일 안내하기", "text_en": "Communicate the correct deadline", "success_criteria_en": "User states the documentation must be ready by the end of March."},
+      {"id": "g2", "text_ko": "늦어질 경우의 위험을 차분히 설명하기", "text_en": "Explain the risks calmly", "success_criteria_en": "User mentions risks such as penalties or tax audit exposure without sounding threatening."},
+      {"id": "g3", "text_ko": "필요한 자료를 구체적으로 설명하기", "text_en": "Specify the data needed", "success_criteria_en": "User explains what group data is needed from HQ."},
+      {"id": "g4", "text_ko": "자료 제출 일정 합의하기", "text_en": "Agree on a date for the data", "success_criteria_en": "A specific date or action (e.g. email to HQ today) is agreed."}
+    ],
+    "curveballs": [
+      "Ngoc says: 'I thought the deadline was June. Are you sure?'",
+      "Ngoc asks: 'Can't you just use last year's report?'"
+    ],
+    "key_phrases": [
+      {"en": "Just a heads-up about the deadline.", "ko": "마감일 관련해 미리 말씀드리려고요"},
+      {"en": "The documentation needs to be ready by...", "ko": "문서는 ...까지 준비되어야 합니다"},
+      {"en": "If it's late, there's a risk of...", "ko": "늦어지면 ...의 위험이 있습니다"},
+      {"en": "To be specific, we need...", "ko": "구체적으로 말씀드리면 ...가 필요합니다"},
+      {"en": "Would it help if we prepared a short list for HQ?", "ko": "본사에 보낼 요청 목록을 저희가 정리해 드리면 도움이 될까요?"}
+    ],
+    "max_turns": 12,
+    "closing_condition_en": "A date for the HQ data is agreed and the deadline is understood, or the user says goodbye."
+  },
+  {
+    "id": "deals_dd_interview",
+    "title_ko": "재무실사: 대상회사 경영진 인터뷰",
+    "title_en": "Financial due diligence interview with target management",
+    "service_line": "Deals",
+    "difficulty_default": "hard",
+    "call_type": "video",
+    "target_minutes": 6,
+    "briefing_ko": "한국 투자자가 식품회사 인수를 검토하고 있으며, 당신은 재무실사(FDD) 팀원입니다. 대상회사 CFO Hieu와 인터뷰하며 매출 성장, EBITDA 마진 하락 이유, 주요 고객 의존도, 운전자본 변화를 파악하세요. CFO는 묻는 것에만 답하므로 좋은 질문을 해야 숫자를 얻을 수 있습니다.",
+    "user_role_ko": "Deals팀 Senior (재무실사)",
+    "personas": [
+      {
+        "name": "Hieu",
+        "title": "Chief Financial Officer",
+        "company_fictional": "Mekong Fresh Co. (target company)",
+        "voice": "fable",
+        "personality_en": "Confident, wants to present the company positively, answers only what is asked.",
+        "speaking_style_en": "Smooth and promotional, gives general answers first and details only when pressed.",
+        "hidden_facts": [
+          "Revenue last year was about VND 850 billion, up 12% year-on-year.",
+          "EBITDA margin dropped from 14% to 11% due to a one-off marketing campaign of about VND 20 billion and higher raw material prices.",
+          "The largest customer, a supermarket chain, represents about 35% of revenue; its contract renews next year.",
+          "Receivable days increased from 45 to 60 days because the largest customer negotiated longer payment terms."
+        ],
+        "opening_line": "Welcome, happy to support the process. We've had a strong year, so ask me anything."
+      }
+    ],
+    "goals": [
+      {"id": "g1", "text_ko": "매출 규모와 성장률 확인하기", "text_en": "Confirm revenue and growth", "success_criteria_en": "User obtains the revenue figure or growth rate."},
+      {"id": "g2", "text_ko": "EBITDA 마진 하락 원인 파악하기", "text_en": "Understand the EBITDA margin decline", "success_criteria_en": "User learns about the one-off campaign and/or raw material costs."},
+      {"id": "g3", "text_ko": "주요 고객 의존도 확인하기", "text_en": "Identify customer concentration", "success_criteria_en": "User learns the top customer share or contract renewal."},
+      {"id": "g4", "text_ko": "운전자본(매출채권 회전일) 변화 확인하기", "text_en": "Understand the working capital change", "success_criteria_en": "User learns that receivable days increased and why."},
+      {"id": "g5", "text_ko": "추가 자료 요청하기", "text_en": "Request supporting data", "success_criteria_en": "User asks for a breakdown or supporting documents in the data room."}
+    ],
+    "curveballs": [
+      "Hieu says: 'That information is commercially sensitive, why do you need it?'",
+      "Hieu gives a vague answer like 'margins are basically stable' that the user should challenge politely."
+    ],
+    "key_phrases": [
+      {"en": "Could you walk me through...?", "ko": "...에 대해 설명해 주실 수 있을까요?"},
+      {"en": "What were the main drivers of...?", "ko": "...의 주요 원인은 무엇이었나요?"},
+      {"en": "Was that a one-off or recurring?", "ko": "그것은 일회성인가요, 반복적인가요?"},
+      {"en": "Roughly what percentage of revenue...?", "ko": "매출의 대략 몇 퍼센트가...?"},
+      {"en": "Could you upload a breakdown to the data room?", "ko": "세부 내역을 데이터룸에 올려 주실 수 있을까요?"}
+    ],
+    "max_turns": 14,
+    "closing_condition_en": "Most goals are covered and supporting data is requested, or the user says goodbye."
+  },
+  {
+    "id": "general_deadline_push",
+    "title_ko": "마감일 단축 요구에 정중하게 대응하기",
+    "title_en": "Pushing back on a shorter deadline",
+    "service_line": "General",
+    "difficulty_default": "hard",
+    "call_type": "phone",
+    "target_minutes": 5,
+    "briefing_ko": "고객사 CFO Anna가 감사보고서를 원래 일정(4주 후)보다 빠른 2주 안에 받아야 한다고 요구합니다. 품질을 지키면서 현실적인 대안(예: 은행에 먼저 줄 수 있는 결과물, 단계별 일정)을 제시하고, 필요한 고객 측 조건을 분명히 하세요.",
+    "user_role_ko": "프로젝트 담당 Senior (매니저 동의 하에 협의)",
+    "personas": [
+      {
+        "name": "Anna",
+        "title": "Chief Financial Officer",
+        "company_fictional": "Horizon Retail Co.",
+        "voice": "shimmer",
+        "personality_en": "Demanding and impatient, under pressure from the bank; will negotiate if given concrete options.",
+        "speaking_style_en": "Assertive, uses phrases like 'I need this' and 'That's not acceptable', interrupts.",
+        "hidden_facts": [
+          "The bank actually needs management's draft financial statements and an update from the auditor in two weeks; the final signed report can follow later.",
+          "Anna's team still has not provided the fixed asset register.",
+          "Anna will accept a phased plan if her real need is met."
+        ],
+        "opening_line": "I'll be direct. The bank needs the audit report in two weeks, not four. Can your team make that happen?"
+      }
+    ],
+    "goals": [
+      {"id": "g1", "text_ko": "고객의 실제 필요 파악하기", "text_en": "Find out the client's real need", "success_criteria_en": "User asks what exactly the bank needs and learns about the draft/update option."},
+      {"id": "g2", "text_ko": "무리한 요구에 정중하게 반대하기", "text_en": "Push back politely on the unrealistic deadline", "success_criteria_en": "User explains politely why a final report in two weeks is not realistic."},
+      {"id": "g3", "text_ko": "현실적인 대안 제시하기", "text_en": "Offer realistic options", "success_criteria_en": "User proposes at least one alternative such as a phased plan or a status letter."},
+      {"id": "g4", "text_ko": "고객 측 조건 명확히 하기", "text_en": "Clarify what the client must provide", "success_criteria_en": "User mentions outstanding items such as the fixed asset register with a date."}
+    ],
+    "curveballs": [
+      "Anna says: 'If you can't do it, maybe we need a different audit firm.'",
+      "Anna asks: 'Why can't you just add more people?'"
+    ],
+    "key_phrases": [
+      {"en": "I completely understand the pressure you're under.", "ko": "어떤 압박을 받고 계신지 충분히 이해합니다"},
+      {"en": "To be transparent, ...", "ko": "솔직하게 말씀드리면..."},
+      {"en": "What exactly does the bank need, and by when?", "ko": "은행이 정확히 무엇을 언제까지 필요로 하나요?"},
+      {"en": "One option would be to...", "ko": "한 가지 방안은 ...하는 것입니다"},
+      {"en": "For that to work, we would need...", "ko": "그렇게 하려면 ...가 필요합니다"}
+    ],
+    "max_turns": 12,
+    "closing_condition_en": "An option and client-side conditions are agreed, or the user says goodbye."
+  },
+  {
+    "id": "general_hq_vn_call",
+    "title_ko": "한국 본사 + 베트남 법인 3자 통화",
+    "title_en": "Multi-party call: Korean HQ and Vietnam team",
+    "service_line": "General",
+    "difficulty_default": "hard",
+    "call_type": "multi_party",
+    "target_minutes": 6,
+    "briefing_ko": "한국 본사 재무이사 Mr. Park과 베트남 법인 재무팀장 Ms. Thu가 함께하는 영어 회의입니다. 본사는 베트남 법인의 일부 비용이 세무상 손금으로 인정되지 않은 이유를 묻습니다. 핵심은 '2천만 동 이상 거래는 무현금 결제 증빙이 있어야 공제 가능하다'는 베트남 규정입니다. 큰 틀에서 쉽게 설명하고, 양측의 의견 차이를 조율해 실행 계획을 합의하세요.",
+    "user_role_ko": "베트남 법인 담당 자문팀 Senior",
+    "personas": [
+      {
+        "name": "Mr. Park",
+        "title": "Finance Director, Headquarters",
+        "company_fictional": "Hanbit Industries (Korea HQ)",
+        "voice": "onyx",
+        "personality_en": "Senior, results-oriented, wants a clear explanation and a fix; slightly impatient with local issues.",
+        "speaking_style_en": "Formal, concise, asks 'What is the impact?' and 'Who is responsible?'",
+        "hidden_facts": [
+          "HQ noticed the Vietnam effective tax rate increased this year.",
+          "Mr. Park wants a monthly control so it does not happen again."
+        ],
+        "opening_line": "Thank you for joining. I'd like to understand why some of our Vietnam expenses were not deductible this year."
+      },
+      {
+        "name": "Ms. Thu",
+        "title": "Finance Manager, Vietnam",
+        "company_fictional": "Hanbit Vietnam Co.",
+        "voice": "alloy",
+        "personality_en": "Hard-working, feels HQ is blaming her team; explains that some suppliers insisted on cash payments.",
+        "speaking_style_en": "Polite but defensive, gives operational details, sometimes disagrees with Mr. Park.",
+        "hidden_facts": [
+          "Several invoices above VND 20 million were paid in cash to small local suppliers.",
+          "About 15 invoices were affected last year.",
+          "Thu can switch these suppliers to bank transfer from next month."
+        ],
+        "opening_line": "Hello everyone. I can share some background from the Vietnam side when needed."
+      }
+    ],
+    "goals": [
+      {"id": "g1", "text_ko": "베트남 규정을 쉽게 설명하기", "text_en": "Explain the Vietnam rule simply", "success_criteria_en": "User explains that payments above VND 20 million generally need non-cash payment evidence to be deductible."},
+      {"id": "g2", "text_ko": "양측 입장을 모두 인정하기", "text_en": "Acknowledge both parties' views", "success_criteria_en": "User acknowledges HQ's concern and the local team's practical issues."},
+      {"id": "g3", "text_ko": "영향과 원인 정리하기", "text_en": "Summarize impact and cause", "success_criteria_en": "User connects the cash payments to the higher tax cost."},
+      {"id": "g4", "text_ko": "실행 계획 합의하기", "text_en": "Agree an action plan with owners", "success_criteria_en": "An action like switching to bank transfer and a monthly check is agreed with owners."}
+    ],
+    "curveballs": [
+      "Mr. Park and Ms. Thu disagree about who is responsible; the user must mediate.",
+      "Mr. Park asks: 'Can we fix last year's tax return?'"
+    ],
+    "key_phrases": [
+      {"en": "Let me explain the rule at a high level.", "ko": "규정을 큰 틀에서 설명드리겠습니다"},
+      {"en": "Both points are valid.", "ko": "두 분 말씀 모두 일리가 있습니다"},
+      {"en": "To summarize the impact, ...", "ko": "영향을 정리하면..."},
+      {"en": "Moving forward, I'd suggest...", "ko": "앞으로는 ...를 제안드립니다"},
+      {"en": "Can we agree on who will own this?", "ko": "이 건은 누가 맡을지 정할까요?"}
+    ],
+    "max_turns": 14,
+    "closing_condition_en": "An action plan with owners is agreed by both personas, or the user says goodbye."
+  },
+  {
+    "id": "general_dont_know",
+    "title_ko": "답을 모르는 질문을 받았을 때",
+    "title_en": "When you don't know the answer",
+    "service_line": "General",
+    "difficulty_default": "medium",
+    "call_type": "phone",
+    "target_minutes": 3,
+    "briefing_ko": "고객사 회계팀장 Brian과 정기 통화 중, 새 임대차 계약이 EBITDA와 세금에 어떤 영향을 주는지 갑자기 질문을 받았습니다. 당신은 정확히 알지 못합니다. 추측하지 말고, 질문을 정확히 이해한 뒤 전문가와 확인해 언제까지 답을 주겠다고 프로페셔널하게 대응하세요.",
+    "user_role_ko": "감사팀 Senior Associate",
+    "personas": [
+      {
+        "name": "Brian",
+        "title": "Head of Accounting",
+        "company_fictional": "Starlight Hotels Co.",
+        "voice": "echo",
+        "personality_en": "Friendly and curious, but needs an answer for a board meeting.",
+        "speaking_style_en": "Conversational, adds new questions quickly, asks 'Roughly, what do you think?'",
+        "hidden_facts": [
+          "The new office lease is for five years.",
+          "The board meeting is next Thursday.",
+          "Brian is happy to wait if he gets a clear date."
+        ],
+        "opening_line": "Oh, before we finish, one more thing. We just signed a new five-year office lease. How will that affect our EBITDA and our tax?"
+      }
+    ],
+    "goals": [
+      {"id": "g1", "text_ko": "질문을 정확히 확인하기", "text_en": "Clarify the question", "success_criteria_en": "User repeats or clarifies the question before answering."},
+      {"id": "g2", "text_ko": "추측하지 않고 솔직하게 말하기", "text_en": "Be honest without guessing", "success_criteria_en": "User avoids giving an uncertain conclusion and says they will confirm."},
+      {"id": "g3", "text_ko": "확인 방법과 회신 일정 제시하기", "text_en": "Explain how and when you will reply", "success_criteria_en": "User mentions checking with a specialist and gives a date before the board meeting."},
+      {"id": "g4", "text_ko": "필요한 자료 요청하기", "text_en": "Request the information needed", "success_criteria_en": "User asks for the lease contract or key terms."}
+    ],
+    "curveballs": [
+      "Brian asks: 'Just roughly, will EBITDA go up or down?'",
+      "Brian adds a second question about VAT on the rent."
+    ],
+    "key_phrases": [
+      {"en": "That's a great question. Just to make sure I understand, ...", "ko": "좋은 질문입니다. 제가 제대로 이해했는지 확인하자면..."},
+      {"en": "I don't want to give you an inaccurate answer.", "ko": "부정확한 답변을 드리고 싶지 않습니다"},
+      {"en": "Let me check with our specialist and get back to you by...", "ko": "전문가와 확인한 후 ...까지 답변드리겠습니다"},
+      {"en": "Could you send me the key terms of the lease?", "ko": "임대차 계약의 주요 조건을 보내 주시겠어요?"}
+    ],
+    "max_turns": 10,
+    "closing_condition_en": "The user commits to a reply date and requests the lease terms, or says goodbye."
+  },
+  {
+    "id": "general_voicemail",
+    "title_ko": "고객에게 음성 메시지 남기기",
+    "title_en": "Leaving a voicemail for a client",
+    "service_line": "General",
+    "difficulty_default": "easy",
+    "call_type": "voicemail",
+    "target_minutes": 1,
+    "briefing_ko": "고객사 Chief Accountant Linh에게 전화했지만 받지 않아 음성 메시지를 남겨야 합니다. 30초 안에 이름과 소속, 용건(은행조회서 미제출), 요청 사항과 기한(수요일까지), 회신 방법을 명확하게 전달하세요. 상대방은 답하지 않습니다.",
+    "user_role_ko": "감사팀 Senior Associate",
+    "personas": [
+      {
+        "name": "Linh",
+        "title": "Chief Accountant",
+        "company_fictional": "ABC Manufacturing Co.",
+        "voice": "shimmer",
+        "personality_en": "Not available; voicemail greeting only.",
+        "speaking_style_en": "Recorded greeting.",
+        "hidden_facts": [],
+        "opening_line": "Hi, you've reached Linh in the Finance department. I'm not available right now. Please leave a message after the tone."
+      }
+    ],
+    "goals": [
+      {"id": "g1", "text_ko": "이름과 소속 밝히기", "text_en": "State your name and firm", "success_criteria_en": "User says their name and that they are from the audit team."},
+      {"id": "g2", "text_ko": "용건을 명확히 말하기", "text_en": "State the purpose clearly", "success_criteria_en": "User mentions the outstanding bank confirmation."},
+      {"id": "g3", "text_ko": "요청 사항과 기한 말하기", "text_en": "Give the request and deadline", "success_criteria_en": "User asks for the document and mentions Wednesday."},
+      {"id": "g4", "text_ko": "회신 방법을 안내하고 정중히 마무리하기", "text_en": "Explain how to reply and close politely", "success_criteria_en": "User says how to call or email back and ends politely."}
+    ],
+    "curveballs": [],
+    "key_phrases": [
+      {"en": "Hi Linh, this is ... from the audit team.", "ko": "Linh 님, 감사팀 ...입니다"},
+      {"en": "I'm calling regarding...", "ko": "...와 관련해 연락드렸습니다"},
+      {"en": "Could you please send it by Wednesday?", "ko": "수요일까지 보내 주실 수 있을까요?"},
+      {"en": "You can reach me at this number or by email.", "ko": "이 번호나 이메일로 연락 주시면 됩니다"},
+      {"en": "Thanks, and have a great day.", "ko": "감사합니다. 좋은 하루 보내세요"}
+    ],
+    "max_turns": 1,
+    "closing_condition_en": "Single user turn; no AI reply."
+  }
+]
