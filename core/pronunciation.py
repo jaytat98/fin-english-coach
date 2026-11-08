@@ -46,7 +46,9 @@ class Token:
 
 def _number_to_words(raw: str) -> list[str]:
     if num2words is None:
-        return [raw]
+        from core.number_words import number_words
+
+        return number_words(raw)
     try:
         value: float | int = float(raw) if "." in raw else int(raw)
         words = num2words(value)

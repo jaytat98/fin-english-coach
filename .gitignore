@@ -13,3 +13,5 @@ venv/
 *.db-*
 *.sqlite
 *.sqlite3
+.venv312/
+audio_cache/dynamic/

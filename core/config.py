@@ -7,7 +7,7 @@ variables / .env. Never hard-code secrets.
 from __future__ import annotations
 
 import os
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from datetime import date
 from functools import lru_cache
 
@@ -75,6 +75,8 @@ class Prices:
     chat_output_per_1m: float = 0.60
     stt_per_minute: float = 0.003
     tts_per_1m_chars: float = 15.0
+    tts_per_minute: float = 0.015
+    tts_by_minute: bool = False
 
 
 @dataclass(frozen=True)
@@ -111,6 +113,11 @@ class Settings:
     fake_ai: bool
     limits: Limits = field(default_factory=Limits)
     prices: Prices = field(default_factory=Prices)
+    openai_model_strong: str = "gpt-4o"
+    stt_model_shadowing: str = "gpt-4o-mini-transcribe"
+    program_start_configured: bool = False
+    strong_prices: Prices = field(default_factory=lambda: Prices(2.5, 10.0))
+    app_url: str = "http://localhost:8501"
 
     @property
     def ai_enabled(self) -> bool:
@@ -135,6 +142,10 @@ def get_settings() -> Settings:
         chat_output_per_1m=_float("PRICE_CHAT_OUTPUT_PER_1M", 0.60),
         stt_per_minute=_float("PRICE_STT_PER_MINUTE", 0.003),
         tts_per_1m_chars=_float("PRICE_TTS_PER_1M_CHARS", 15.0),
+        tts_per_minute=_float("PRICE_TTS_PER_MINUTE", 0.015),
+        tts_by_minute=(_read("OPENAI_TTS_MODEL", "gpt-4o-mini-tts") or "").startswith(
+            "gpt-4o-mini-tts"
+        ),
     )
     countries = tuple(
         c.strip().upper() for c in (_read("HOLIDAY_COUNTRIES", "VN") or "VN").split(",") if c
@@ -155,6 +166,19 @@ def get_settings() -> Settings:
         fake_ai=(_read("FAKE_AI", "0") or "0").strip() in ("1", "true", "True", "yes"),
         limits=limits,
         prices=prices,
+        openai_model_strong=_read("OPENAI_MODEL_STRONG", "gpt-4o") or "gpt-4o",
+        stt_model_shadowing=(
+            _read("OPENAI_STT_MODEL_SHADOWING")
+            or _read("OPENAI_STT_MODEL", "gpt-4o-mini-transcribe")
+            or "gpt-4o-mini-transcribe"
+        ),
+        program_start_configured=_valid_program_start(),
+        strong_prices=replace(
+            prices,
+            chat_input_per_1m=_float("PRICE_STRONG_INPUT_PER_1M", 2.5),
+            chat_output_per_1m=_float("PRICE_STRONG_OUTPUT_PER_1M", 10.0),
+        ),
+        app_url=_read("APP_URL", "http://localhost:8501") or "http://localhost:8501",
     )
 
 
@@ -170,6 +194,25 @@ def estimate_cost(
         tokens_in / 1_000_000 * prices.chat_input_per_1m
         + tokens_out / 1_000_000 * prices.chat_output_per_1m
         + audio_sec / 60 * prices.stt_per_minute
-        + tts_chars / 1_000_000 * prices.tts_per_1m_chars
+        + (tts_chars / 900 * prices.tts_per_minute if prices.tts_by_minute
+           else tts_chars / 1_000_000 * prices.tts_per_1m_chars)
     )
     return round(cost, 6)
+
+
+def _valid_program_start() -> bool:
+    try:
+        date.fromisoformat(_read("PROGRAM_START_DATE") or "")
+        return True
+    except ValueError:
+        return False
+
+
+STRONG_OPERATIONS = frozenset({"call_evaluator", "custom_scenario", "weekly_report", "cohort_report"})
+
+
+def model_for(operation: str) -> tuple[str, Prices]:
+    settings = get_settings()
+    if operation in STRONG_OPERATIONS:
+        return settings.openai_model_strong, settings.strong_prices
+    return settings.openai_model, settings.prices
